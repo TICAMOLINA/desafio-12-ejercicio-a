@@ -1,7 +1,11 @@
 @use './base/resets';
 @use './layout/header';
+@use './layout/main';
+@use './layout/footer';
+
 
 body {
     background-color: palevioletred;
     height: 100%;
+    margin-left: 0.2rem
 }
