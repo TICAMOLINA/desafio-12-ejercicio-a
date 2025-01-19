@@ -56,6 +56,19 @@
             }
         }
 
+        @media screen and (min-width: 576px) {
+            & {
+                flex-direction: column;
+            }
+
+            & .menu-toogle {
+                display: none;
+            }
+
+            & h1 {
+                width: 100%;
+            }
+        }        
 }
 
 #menu {
@@ -81,6 +94,13 @@
     &__nav-link {
         display: block;
         padding: variables.$relative-padding;
+    }
+
+    @media screen and (min-width: 576px) {
+        & {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
 
