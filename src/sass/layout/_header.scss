@@ -1,0 +1,90 @@
+@use '../base/variables';
+
+.main-header {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .principal {
+        display: flex;
+        flex-direction: row; /* Cambiar a fila */
+        align-items: center; /* Centrar verticalmente los elementos */
+        background-color: rgb(187, 83, 187);
+    }
+
+    h1 {
+        text-align: center;
+        background-color: rgb(187, 83, 187);
+        color:antiquewhite;
+        padding: variables.$relative-padding;
+        width: 90vw;
+    }
+
+    .menu-toogle {
+            width: 10vw;
+            height: 4rem;
+            position: relative;
+            cursor: pointer;
+        
+            &__label {
+                display: block;
+                background-color: black;
+                height: 100%;
+            }
+        
+            &__top-bread,
+            &__meat,
+            &__bottom-bread {
+                display: block;
+                background-color: #333;
+                height: 0.2rem;
+                position: absolute;
+                left: 0.5rem;
+                right: 0.5rem;
+            }
+        
+            &__top-bread {
+                top: 0.8rem;
+            }
+        
+            &__meat {
+                top: 50%;
+                margin-top: -0.1rem;
+            }
+        
+            &__bottom-bread {
+                bottom: 0.8rem;
+            }
+        }
+
+}
+
+#menu {
+    display: none;
+}
+
+.nav-bar {
+    background-color: rgb(236, 179, 229);
+    display: none;
+
+    &__nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    &__nav-item {
+        text-align: center;
+        background-color: rgb(236, 179, 229);
+    }
+
+    &__nav-link {
+        display: block;
+        padding: variables.$relative-padding;
+    }
+}
+
+
+
+
+
