@@ -109,6 +109,10 @@
             justify-content: space-evenly;
         }
     }
+
+    @media screen and (min-width: 992px) {
+        margin-top: 1rem;       
+       }
 }
 
 

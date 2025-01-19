@@ -12,9 +12,23 @@
         margin-top: 4rem;
     }
 
-    .proyect-content {
+    .project-content {
         margin-top: 4rem;
     }
+
+    @media screen and (min-width: 992px) {
+        & h2 {
+            margin-bottom: 1rem
+        }
+
+        & .web-content {
+            margin-top: 6rem;
+        }
+
+        & .proyect-content {
+            margin-top: 6rem;
+        }
+}
 }
 
 .lateral-bar {
